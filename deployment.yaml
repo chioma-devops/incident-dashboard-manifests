@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: incident-dashboard
+  namespace: incident-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: incident-dashboard
+  template:
+    metadata:
+      labels:
+        app: incident-dashboard
+    spec:
+      containers:
+        - name: incident-dashboard
+          image: incidentdashboard.azurecr.io/incident-dashboard:v1.0.0
+          ports:
+            - containerPort: 80
