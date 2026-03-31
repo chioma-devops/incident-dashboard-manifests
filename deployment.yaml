@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: incident-dashboard
-          image: incidentdashboard.azurecr.io/incident-dashboard:v1.0.0
+          image: incidentdashboard.azurecr.io/incident-dashboard:4
           ports:
             - containerPort: 80
