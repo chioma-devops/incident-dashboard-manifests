@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: incident-dashboard
-          image: incidentdashboard.azurecr.io/incident-dashboard:13
+          image: incidentdashboard.azurecr.io/incident-dashboard:14
           ports:
             - containerPort: 80
           env:
             - name: APP_VERSION
-              value: "v13"
+              value: "v14"
