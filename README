@@ -1,0 +1,13 @@
+# Incident Dashboard Manifests (GitOps)
+
+This repository contains Kubernetes manifests used for GitOps deployment to AKS using Argo CD.
+
+## Workflow
+- CI pipeline builds image and pushes to ACR
+- Pipeline updates image tag in this repo
+- Argo CD detects change and syncs automatically
+
+## Components
+- Deployment
+- Service
+- Namespace
